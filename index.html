@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="">
+	<style>
+		form{
+			width: 500px;
+			
+			padding: 20px;
+			border:5px solid red;
+			margin:0 auto;
+		}
+		input[type="text"], input[type="password"], select {
+			width: 350px;
+			height: 20px;
+			border : none;
+			border-bottom: 2px silver solid;
+			outline: none;
+			background: lightblue;
+
+		}
+		textarea{
+			width: 345px;
+			resize: none;
+			background: lightblue;
+			border:none;
+			border-bottom: 2px silver solid;
+			outline: none;
+
+		}
+		input[type="submit"]{
+			background-color: green;
+			color: white;
+			border: none;
+			width: 350px;
+			padding: 10px;
+			outline: none;
+		}
+		input[type="submit"]:hover{
+			background : orange;
+			color: black;
+		}
+		input[type="text"]:focus ,input[type="password"]:focus,select:focus{
+			background : lightblue;
+		}
+		input[type="text"]:hover, input[type='password']:hover,select:hover{
+			border-color: brown;
+		}
+
+
+	</style>
+</head>
+<body>
+	<form action="">
+		<h2 >Fill and Submit</h2><hr>
+		<table>
+			<tr>
+				<td><label for="user">User Name</label></td>
+				<td><input type="text" name="user" id="user"></td>
+			</tr>
+			<tr>
+				<td><label for="pass">Password</label></td>
+				<td><input type="password" name="pass" id="pass"></td>
+			</tr>
+			<tr>
+				<td><label for="">Gender</label></td>
+				<td>Male: <input type="radio" name="gender" value="male"> | Female: <input type="radio" name="gender" value="female"> </td>
+			</tr>
+			<tr>
+				<td><label for="">Skills</label></td>
+				<td>HTML : <input type="checkbox" name="html" value="html"> | CSS: <input type="checkbox" name="css" value="css"> | PHP: <input type="checkbox" name="php" value="php"></td>
+			</tr>   
+			<tr>
+				<td><label for="country">Select Your Country</label></td>
+				<td>
+					<select name="" id="country" name="country">
+						<option value="">Select The country</option>
+						<option value="india">India</option>
+						<option value="india">United A</option>
+						<option value="india">United B</option>
+						<option value="india">Austrilia</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="comment">Comments</label></td>
+				<td><textarea name="" id="" cols="40" rows="10"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Click to submit" name="submit_form"></td>
+			</tr>
+
+
+		</table>
+	</form>
+
+
+
+
+</body>
+</html> 
